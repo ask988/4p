@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Club Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f6ff;
+            margin: 40px;
+        }
+        h1 {
+            text-align: center;
+            color: #003366;
+        }
+        form {
+            background-color: white;
+            max-width: 600px;
+            margin: auto;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        label {
+            font-weight: bold;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0 16px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="radio"], input[type="checkbox"] {
+            width: auto;
+            margin-right: 10px;
+        }
+        .buttons {
+            text-align: center;
+        }
+        button {
+            background-color: #003366;
+            color: white;
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0055aa;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>College Club Registration Form</h1>
+
+    <form>
+        <!-- Full Name -->
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+        <!-- Roll Number -->
+        <label for="roll">Roll Number:</label>
+        <input type="text" id="roll" name="roll" placeholder="Enter your roll number" required>
+
+        <!-- Department -->
+        <label for="dept">Department:</label>
+        <input type="text" id="dept" name="dept" placeholder="Enter your department" required>
+
+        <!-- Year of Study -->
+        <label for="year">Year of Study:</label>
+        <select id="year" name="year" required>
+            <option value="">-- Select Year --</option>
+            <option value="1st">1st Year</option>
+            <option value="2nd">2nd Year</option>
+            <option value="3rd">3rd Year</option>
+            <option value="4th">4th Year</option>
+        </select>
+
+        <!-- Gender -->
+        <label>Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="Male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="Other">
+        <label for="other">Other</label><br><br>
+
+        <!-- Clubs Interested -->
+        <label>Clubs Interested in Joining:</label><br>
+        <input type="checkbox" id="music" name="club" value="Music">
+        <label for="music">Music Club</label><br>
+        <input type="checkbox" id="dance" name="club" value="Dance">
+        <label for="dance">Dance Club</label><br>
+        <input type="checkbox" id="coding" name="club" value="Coding">
+        <label for="coding">Coding Club</label><br>
+        <input type="checkbox" id="literary" name="club" value="Literary">
+        <label for="literary">Literary Club</label><br><br>
+
+        <!-- Email -->
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="example@college.edu" required>
+
+        <!-- Contact Number -->
+        <label for="contact">Contact Number:</label>
+        <input type="tel" id="contact" name="contact" placeholder="Enter your phone number" required>
+
+        <!-- Date of Birth -->
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <!-- Upload Photo -->
+        <label for="photo">Upload Profile Photo:</label>
+        <input type="file" id="photo" name="photo" accept="image/*">
+
+        <!-- Reason for Joining -->
+        <label for="reason">Short Description / Reason for Joining:</label>
+        <textarea id="reason" name="reason" rows="4" placeholder="Tell us why you want to join..." required></textarea>
+
+        <!-- Buttons -->
+        <div class="buttons">
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </div>
+    </form>
+
+</body>
+</html>
+
